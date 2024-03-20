@@ -11,7 +11,7 @@ import { BullModule } from '@nestjs/bull';
   imports: [
     TypeOrmModule.forFeature([ProductWaitlist]),
     BullModule.registerQueueAsync({
-      name:'easepay-email-queue',
+      name: 'easepay-email-queue',
     }),
   ],
 })
