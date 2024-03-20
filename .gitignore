@@ -112,3 +112,4 @@ compose.yml
 protoc.prod.sh
 protoc.local.sh
 easepay.auth.db
+yarn.lock
