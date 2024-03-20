@@ -40,8 +40,8 @@ See the [task](#task) section
 4. Run the Database Migrations
 5. Make a request to `http://localhost:3000/v1/waitlist`,  to add a user to the waitlist. The request body takes "email" and "fullname" fields
 6. Implement a `PUT ` endpoint and update the email of the previously added user
-7. Make a  `GET` request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to fetch the user's record 
-8. Remove `data.id` property from the `GET::http://localhost:3000/v1/waitlist/:id` HTTP response
-9. Make a  `DELETE` request to the `http://localhost:3000/v1/waitlist/:id` to remove the user's record 
+7. The `GET` request returns incorrect data, fix the request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to fetch the user's record 
+8. Remove `data.id` property from the `GET::http://localhost:3000/v1/waitlist?email=example-email@provide.com` HTTP response
+9. Make a  `DELETE` request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to remove the user's record 
 10. Review changes 
 
