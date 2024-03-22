@@ -1,10 +1,10 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
-import { NestExpressApplication } from '@nestjs/platform-express';
-import { ConfigService } from '@nestjs/config';
 import { ValidationPipe, VersioningType } from '@nestjs/common';
+import { ConfigService } from '@nestjs/config';
+import { NestFactory } from '@nestjs/core';
+import { NestExpressApplication } from '@nestjs/platform-express';
 import { config } from 'dotenv';
 import helmet from 'helmet';
+import { AppModule } from './app.module';
 
 config(); // parse the application env variables
 
@@ -38,7 +38,7 @@ async function bootstrap() {
     type: VersioningType.URI,
   });
 
-  // await app.listen(port);
+  await app.listen(port);
 }
 
 bootstrap();

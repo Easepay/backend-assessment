@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { AppService } from './app.service';
-import { AUTH_SERVICE_NAME } from './proto/auth.pb';
+// import { AUTH_SERVICE_NAME } from './proto/auth.pb';
 
 @Controller()
 export class AppController {
@@ -8,6 +8,6 @@ export class AppController {
   // REST health check request handler
   @Get('/')
   restHealthCheck() {
-    return { status: 'Service active!' };
+    return { status: 'Hey! Application up and Running!' };
   }
 }
