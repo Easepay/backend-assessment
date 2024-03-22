@@ -8,18 +8,20 @@ Candidates will be tasked with setting up and troubleshooting a broken codebase,
 
 ## Dependencies
 
-- [Nodejs v18 or greater]()
+- [Nodejs v18 or greater](http://nodejs.org)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
 ## Getting Started
 
 1. Clone the repo
 ```shell
 git clone https://github.com/easepay/backend-assessment.git assessment
+cd assessment
 ```
 
 2. Install dependencies
 ```shell
-npm install # or yarn 
+npm install 
 ```
 
 3. run the application
@@ -40,7 +42,7 @@ See the [task](#task) section
 4. Run the Database Migrations
 5. Make a request to `http://localhost:3000/v1/waitlist`,  to add a user to the waitlist. The request body takes "email" and "fullname" fields
 6. Implement a `PUT ` endpoint and update the email of the previously added user
-7. The `GET` request returns incorrect data, fix the request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to fetch the user's record 
+7. The `GET` request returns incorrect data, fix the request to the `GET::http://localhost:3000/v1/waitlist?email=example-email@provide.com` to fetch the user's record 
 8. Remove `data.id` property from the `GET::http://localhost:3000/v1/waitlist?email=example-email@provide.com` HTTP response
 9. Make a  `DELETE` request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to remove the user's record 
 10. Review changes 
