@@ -4,7 +4,7 @@
  * the waitlist module is responsible for tracking the number of individuals and corporate organizations intending the use the product once it's launched
  */
 
-import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
+import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from 'typeorm';
 
 @Entity('product_waitlist')
 export class ProductWaitlist extends BaseEntity {
@@ -18,10 +18,10 @@ export class ProductWaitlist extends BaseEntity {
   email: string;
 
   // the date the record was created
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  @CreateDateColumn({ default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date;
 
   // the date the user detail was updated
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  @UpdateDateColumn({ default: () => 'CURRENT_TIMESTAMP' })
   updatedAt: Date;
 }

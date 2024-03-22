@@ -29,12 +29,12 @@ export class CreateWaitlistTable1685123612614 implements MigrationInterface {
           },
           {
             name: 'createdAt',
-            type: 'timestamp',
+            type: 'timestamptz',
             default: 'CURRENT_TIMESTAMP',
           },
           {
             name: 'updatedAt',
-            type: 'timestamp',
+            type: 'timestamptz',
             default: 'CURRENT_TIMESTAMP',
           },
         ],
