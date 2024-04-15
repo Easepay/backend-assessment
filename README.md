@@ -45,5 +45,15 @@ See the [task](#task) section
 7. The `GET` request returns incorrect data, fix the request to the `GET::http://localhost:3000/v1/waitlist?email=example-email@provide.com` to fetch the user's record 
 8. Remove `data.id` property from the `GET::http://localhost:3000/v1/waitlist?email=example-email@provide.com` HTTP response
 9. Make a  `DELETE` request to the `http://localhost:3000/v1/waitlist?email=example-email@provide.com` to remove the user's record 
-10. Review changes 
+10. Review changes
+11. ``write a bash script that automates the deployment of the above application to a production environment``
+
+
+## Section 2
+This will be an oral / written conversation to gauge your understanding of Nextjs Fundamentals
+1. ``How would you optimize the performance of a Next.js application that uses a lot of dynamic imports and server-side rendering? What tools or techniques would you use to identify performance bottlenecks?``
+   
+2. ``Can you walk me through how you would Dockerize a Next.js application that uses a separate API gateway and multiple microservices? How would you handle environment variables and configuration for each service?``
+
+3. ``How would you use bash scripting to automate the testing and linting of a Next.js application?``
 
